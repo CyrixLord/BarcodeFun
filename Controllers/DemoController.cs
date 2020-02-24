@@ -32,7 +32,8 @@ namespace BarcodeFun.Controllers
                 {
                     using (Graphics graphics = Graphics.FromImage(bitMap))
                     {
-                        Font oFont = new Font("IDAutomationHC39M", 16);
+                        //Font oFont = new Font("IDAutomationHC39M", 16);
+                        Font oFont = new Font("IDAutomationHC39M", 9);  // font size was 16
                         PointF point = new PointF(2f, 2f);
                         SolidBrush whiteBrush = new SolidBrush(Color.White);
                         graphics.FillRectangle(whiteBrush, 0, 0, bitMap.Width, bitMap.Height);
